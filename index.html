@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avisos</title> 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <header>
@@ -12,9 +12,10 @@
     </header>
     <main>
         <section class="container-avisos">
+            
             <div class="alerta">
                 <h2>🔔 Alerta!</h2>
-                <h2>As visitas são permitidas apenas nos horários estabelecidos pela administração do hospital. há 5 minutos</H2>
+                <h2>As visitas são permitidas apenas nos horários estabelecidos pela administração do hospital. há 5 minutos</h2>
             </div>
             <div class="alerta">
                 <h2>🔔 Alerta!</h2>
@@ -28,6 +29,7 @@
                 <h2>🔔 Alerta!</h2>
                 <h2>Cada paciente poderá receber apenas um visitante por vez. há 2 horas</h2>
             </div>
+            
         </section>
         <section class="espaco-mensagem">
             <div class="conteudo-mensagem">

@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+header{
+    background: linear-gradient(to right,#8bc5a3, #4f94dd);
+    color: white;
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+    height: 8.13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    padding: 5px 50px;
+}
+
+.container-avisos{
+    margin: auto;
+    width: 85%;
+    border-style: ridge;
+    border-width: 1px;
+    border-color: #333;
+    border-radius: 1rem;
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+.alerta{
+    width: 100%;
+    border-width: 1px;
+    border-style: ridge;
+    border-radius: 25px;
+    border-color: #333;
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    font-size: 1rem;
+}
+
+.espaco-mensagem{
+    width: 85%;
+    margin: auto;
+    background-color: rgb(250, 247, 247);
+    border-radius: 50px;
+    margin-top: 0.5rem;
+}
+.conteudo-mensagem{
+    background-color: rgb(245, 243, 243);
+    border-style: ridge;
+    border-width: 1px;
+    border-color: #333;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+}
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 5%;
+}
+form label{
+    color: rgb(5, 1, 1);
+}
+form input{
+    width: 100%;
+    background: transparent;
+    border: none;
+}
+/* RODA PÈ. configuração ---*/
+footer{
+    background-color: #D9D9D940;
+    width: 100%;
+    padding: 2px;
+}
+
+.espaco-botao{
+    margin-top: 1.5rem;
+    margin-left: 0;
+    margin-bottom: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #8bc5a3;
+    border-radius: 50px;
+    padding: 15px 70px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.container-rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 5;
+}
+
+#zap, #insta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#insta img{
+    width: 5%;
+}
+#zap img{
+    width: 10%;
+}
+
+/*--------------------------------------------*/
+
