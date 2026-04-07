@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+    <title>Loja Larisse</title>
+</head>
+<body>
+    <h1>Catálogo de Roupas</h1>
+    <a href="/cadastro" class="botao">Cadastrar Nova Roupa</a>
+    <hr>
+    <div class="lista">
+    {% for p in produtos %}
+    <div class="item">
+        <div>
+            <span style="color: gray;">#{{ p.id }}</span> 
+            <strong>{{ p.nome }}</strong> - R$ {{ p.preco }}
+        </div>
+        <a href="{{ url_for('detalhes', id_produto=p.id) }}">Ver Detalhes</a>
+    </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+    <title>Detalhes do Produto</title>
+</head>
+<body>
+    <h1>Informações da Peça</h1>
+    {% if produto %}
+        <div class="card">
+            <p><strong>Nome:</strong> {{ produto.nome }}</p>
+            <p><strong>Preço:</strong> R$ {{ produto.preco }}</p>
+            <p><strong>Descrição:</strong> {{ produto.descricao }}</p>
+        </div>
+    {% else %}
+        <p>Produto não encontrado!</p>
+    {% endif %}
+    <a href="/">Voltar para a Lista</a>
+</body>
+</html>
